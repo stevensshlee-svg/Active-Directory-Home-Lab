@@ -1,6 +1,1 @@
-# Overview
-This section documents the initial lab infrastructure configuration prior to deploying Active Directory
 
-## Configurations Performed
-* Installed Windows Server 2019 on Virtualbox
-* Configured a static IP address on the server
