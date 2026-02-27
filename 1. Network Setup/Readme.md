@@ -14,6 +14,5 @@
 * Confirmed AD connectivity via login test
 
 # Screenshots
-"nslookup to verify dns resolution"
-"verify domain join via system properties"
+<img width="977" height="508" alt="nslookup" src="https://github.com/user-attachments/assets/a4a542f1-eb01-49d0-b069-4d6b797b7de1" />
 <img width="1019" height="853" alt="tupac shakur" src="https://github.com/user-attachments/assets/aef7d072-e978-41dd-9c7b-6f69cfa01b83" />
