@@ -4,11 +4,10 @@
 * Password reset policies tested
 
 # Group strategy
-Users were added to department group and department group were added to resource permission group. 
+Users were added to department group and department group were added to resource permission group. Using Structured security groups made permission granting more manageable and scalable while reducing the chances of permission creep from occuring.
 * LA-Finance-Users
 * LA-Finance-Share-RW
-* LA-Finance-Share-RO  
-Using Structured security groups made permission granting more manageable and scalable while reducing the chances of permission creep from occuring.
+* LA-Finance-Share-RO
 
 <img width="749" height="531" alt="LA-groups" src="https://github.com/user-attachments/assets/7a127404-4285-4e23-bbc7-c206d3785b9c" />
 <img width="943" height="671" alt="LA-sales-users member example" src="https://github.com/user-attachments/assets/00ca503c-e61e-4b3c-884b-9e306cfe126a" />
