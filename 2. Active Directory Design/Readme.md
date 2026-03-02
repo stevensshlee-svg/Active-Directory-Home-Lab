@@ -17,8 +17,4 @@ Separating Users and Computers makes policy targeting cleaner and more predictab
 I also placed security groups in their own OU to keep access control organized and easier to review. My goal was to build something that would scale if the company expanded, rather than something that only worked for a small lab.
 
 ## Lessons Learned
-Designing the OU structure helped me understand that OUs aren’t just folders — they directly impact how Group Policies apply and how administrative control can be delegated.
-
-This part of the lab made me slow down and plan before building. A clean structure at the beginning prevents unnecessary restructuring later.
-
-It reinforced that good organization in Active Directory isn’t just about appearance — it affects management, security, and troubleshooting long-term.
+Designing the OU structure helped me understand that OUs aren’t just folders, they directly impact how Group Policies apply and how administrative control can be delegated. Therefore, this part of the lab made me slow down and plan before building. A clean structure at the beginning prevents unnecessary restructuring later.
