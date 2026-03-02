@@ -29,7 +29,7 @@ Key Details:
 
 
 ## Root Cause Analysis
-The user account was locked due to multiple failed login attempts, triggering the domains account lockout policy threshold
+The user account was locked due to multiple failed login attempts, triggering the domains account lockout policy threshold.
 
 ## Remediation / Validation
 * Unlocked user Kendrick Lamar's account on the Domain Controller via account properties tab
