@@ -10,9 +10,9 @@ Within each location, I separated objects into:
 I wanted the structure to feel realistic and easy to manage if this were a real environment.
 
 ## Why I structure it this way
-I organized the domain by location first, then by object type. My reasoning was that location-based OUs would make it easier to apply site-specific Group Policies later if needed.
+I organized the domain by location first, then by object type. My reasoning was that location based OUs would make it easier to apply site specific Group Policies later if needed.
 
-Separating Users and Computers makes policy targeting cleaner and more predictable. Since user-based policies and computer-based policies are processed differently, keeping them in separate OUs reduces confusion and makes troubleshooting easier.
+Separating Users and Computers makes policy targeting cleaner and more predictable. Since user based policies and computer-based policies are processed differently, keeping them in separate OUs reduces confusion and makes troubleshooting easier.
 
 I also placed security groups in their own OU to keep access control organized and easier to review. My goal was to build something that would scale if the company expanded, rather than something that only worked for a small lab.
 
