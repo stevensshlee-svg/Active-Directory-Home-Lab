@@ -41,4 +41,4 @@ The user account was locked due to multiple failed login attempts, triggering th
 
 
 ## Lessons Learned
-Account lockouts can occur for various reasons, such as mistyped passwords, failure to update a password, or cached old credentials on a system. It is always best practice to review the event logs to identify the source of the lockout. Repeatedly unlocking an account without performing root cause analysis can lead to recurring issues; therefore, always determine the origin of the lockout before unlocking the account.
+Account lockouts can occur for various reasons, such as mistyped passwords, failure to update a password, or cached old credentials on a system. It's always best practice to review the event logs to identify the source of the lockout. Repeatedly unlocking an account without performing root cause analysis can lead to recurring issues; therefore, always determine the origin of the lockout before unlocking the account.
