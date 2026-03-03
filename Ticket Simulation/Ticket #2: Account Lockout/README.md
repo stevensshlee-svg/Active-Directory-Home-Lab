@@ -33,7 +33,7 @@ The user account was locked due to multiple failed login attempts, triggering th
 
 ## Remediation / Validation
 * Unlocked user Kendrick Lamar's account on the Domain Controller via account properties tab
-* Configured a temporary password and enabled "User must change password at next logon" to allow a fresh password
+* Configured a temporary password and enabled "User must change password at next logon" to allow the user to configure a new password
 <img width="406" height="537" alt="remediation" src="https://github.com/user-attachments/assets/b5ae1b84-1f2d-4590-a19a-6ca3585cc872" />
 
 * Verified user connectivity by successfully logging on
