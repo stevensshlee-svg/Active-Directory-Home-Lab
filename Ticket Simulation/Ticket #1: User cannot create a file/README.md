@@ -10,7 +10,7 @@ Key Details:
 * Error: "you need permission to perform this action"
 
 ## Environment / Context
-Because the issue involved file creation, the investigation focused on permission-related configurations.
+Because the issue involved file creation, the investigation focused on permission related configurations.
 - Windows Server 2019 Domain Controller
 - Shared folder hosted on the Domain Controller
 - Share-level permissions configured
@@ -32,15 +32,15 @@ Because the issue involved file creation, the investigation focused on permissio
 6. Reviewed NTFS permissions and confirmed the group had Modify access.
 <img width="356" height="480" alt="sales folder ntfs permissions" src="https://github.com/user-attachments/assets/5fd25fa9-ebd4-40ad-ad5f-592d6a8f7944" />
 
-7. Reviewed Share permissions and found Authenticated Users had Read-only access.
+7. Reviewed Share permissions and found Authenticated Users had "Read only" access.
 <img width="358" height="446" alt="techsolutions share permissions" src="https://github.com/user-attachments/assets/8994f24c-f15d-4194-855e-61fe57251fcd" />
 
-8. Identified that share-level permissions were restricting write access despite NTFS allowing it.
+8. Identified that hare level permissions were restricting write access despite NTFS allowing it.
 
 ## Root Cause Analysis (RCA)
-Share permissions were configured as Read-only, which prevented write operations over the network. Although NTFS permissions granted Modify access, effective permissions over SMB are determined by the most restrictive combination of Share and NTFS permissions.
+Share permissions were configured as "Read only", which prevented write operations over the network. Although NTFS permissions granted Modify access, effective permissions over SMB are determined by the most restrictive combination of Share and NTFS permissions.
 
-The Read-only share setting overrode the NTFS write permissions, preventing file creation.
+The "Read only" share setting overrode the NTFS write permissions, preventing file creation.
 
 ## Remediation / Verification
 - Updated the Share permissions to grant Authenticated Users "Change" access
@@ -54,5 +54,5 @@ The Read-only share setting overrode the NTFS write permissions, preventing file
 
 ## Lessons Learned
 - Effective Network permissions are determined by both Share and NTFS permissions.
-- Share permissions should be set broadly, while NTFS permission are more fine-tuned.
+- Share permissions should be set broadly, while NTFS permission are more fine tuned.
 - It is important to verify both layers when troubleshooting access issues. 
