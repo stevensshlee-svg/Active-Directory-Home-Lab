@@ -1,4 +1,4 @@
-# Active-Directory-Home-Lab
+# Active Directory Home Lab
 
 ## Summary
 This project simulates a small enterprise environment with two branch locations (Los Angeles and New York). The lab was built to demonstrate hands-on experience relevant to Tier 1 Helpdesk and MSP roles, including Active Directory management, Group Policy deployment, and NTFS/share permissions. 
@@ -15,5 +15,5 @@ This project simulates a small enterprise environment with two branch locations 
 * Active Directory architecture design
 * OU Structure planning
 * Security group delegation (AGDLP)
-* NTFS + Share permission configuration
+* NTFS and Share permission configuration
 * GPO implementation and troubleshooting
