@@ -11,7 +11,8 @@ I created a shared folder structure that mirrored the company layout. Company sh
 This allowed me to control exactly who could read or modify content.  
 Trying to access New York Share and LA Finance Share as user Tupac (LA-Sales)
 <img width="1018" height="850" alt="denied permission to ny as tupac" src="https://github.com/user-attachments/assets/7910a186-abb4-438d-83a0-4abb7a701c8e" />
-<img width="1019" height="849" alt="denied permission to finance as tupac" src="https://github.com/user-attachments/assets/9bc3a64f-db2c-4b99-8e23-321e704b8e3b" />
+<img width="1019" height="849" alt="denied permission to finance as tupac" src="https://github.com/user-attachments/assets/9bc3a64f-db2c-4b99-8e23-321e704b8e3b" />  
+Accessing La-Sales Share as Tupac
 <img width="1012" height="846" alt="sales folder as tupac" src="https://github.com/user-attachments/assets/000fe10f-9f5c-4e17-ab81-4345d48ff243" />
 
 
