@@ -12,7 +12,7 @@ I linked policies to specific OUs to control the scope of the policy
 ## What I focused on
 Rather than creating policies and applying them randomly, I focused on understanding how GPO processing works, the difference between enforced and non-enforced, security filtering, and how to troubleshoot when policies don't apply. 
 I used gpupdate /force and gpresult /r to validate policy application  
-"gpo link overview image"
+<img width="953" height="594" alt="gpo overview" src="https://github.com/user-attachments/assets/666e72b7-7f74-4ff6-a04c-ca4e20886ce9" />  
 
 ## Lessons Learned
 While configuring these policies, I started to really understand how GPO processing works. Policies follow LSDOU order which means Local, then Site, then Domain, then OU. They process from the top down in Active Directory, and the policy applied last is the one that wins if there is a conflict. Seeing this play out in my lab made it easier to understand why linking a GPO in the right place matters.
