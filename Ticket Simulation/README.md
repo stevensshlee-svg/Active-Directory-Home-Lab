@@ -1,2 +1,2 @@
 # Overview
-This section of my portfolio aims to demonstrate my troubleshooting methodology for tier 1 tickets with issues relating to accounts, permissions, and group policies.
+This section of my portfolio demonstrates my troubleshooting methodology for common Tier 1 IT support issues. Each ticket simulates a real helpdesk scenario within a Windows Server / Active Directory lab environment. The tickets cover issues related to user accounts, permissions, group policies, and basic network services. For each scenario, I document the investigation process, root cause, remediation steps, and validation to show how the issue was resolved. The goal of this section is to highlight my approach to troubleshooting, documentation, and problem resolution in a helpdesk environment.
