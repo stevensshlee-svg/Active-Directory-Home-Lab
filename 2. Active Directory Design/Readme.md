@@ -5,7 +5,7 @@ Within each location, I separated objects into:
 * Users
 * Computers
 * Groups
-<img width="944" height="674" alt="Domain overview" src="https://github.com/user-attachments/assets/b114dcd5-097e-407e-9899-ff5bd84b231d" />
+![domain-overview](images/Domain%20overview.png)  
 
 I wanted the structure to feel realistic and easy to manage if this were a real environment.
 
