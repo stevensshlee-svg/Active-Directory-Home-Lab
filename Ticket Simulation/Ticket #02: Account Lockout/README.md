@@ -17,15 +17,15 @@ Key Details:
 ## Investigation
 1. Attempted to replicate the issue at the user's workstation
 2. Confirmed an error message indicating an account lockout
-<img width="1016" height="849" alt="kendrick locked out" src="https://github.com/user-attachments/assets/a7b549ac-a20a-4f1b-99c5-b23bc9878a55" />
+![kendricklockedout](images/kendrick%20locked%20out.png)
 
 3. Checked Domain Controller Security Logs via Event Viewer
 4. Located Event 4740 (account lockout) and event origin
-<img width="816" height="585" alt="event 4740" src="https://github.com/user-attachments/assets/a3ef9f26-992e-4d60-b4a8-db649c60a82d" />
+![event4740](images/event%204740.png)
 
 5. Checked Active Directory Users and Computers (ADUC) for Kendrick Lamar's account properties
 6. Verified the user account was locked
-<img width="930" height="671" alt="kendrick account properties" src="https://github.com/user-attachments/assets/9b1a1124-fd54-406d-a4b5-c4e6309ba71e" />
+![kendrickaccountproperties](images/kendrick%20account%20properties.png)
 
 
 ## Root Cause Analysis
@@ -34,10 +34,10 @@ The user account was locked due to multiple failed login attempts, triggering th
 ## Remediation / Validation
 * Unlocked user Kendrick Lamar's account on the Domain Controller via account properties tab
 * Configured a temporary password and enabled "User must change password at next logon" to allow the user to configure a new password
-<img width="406" height="537" alt="remediation" src="https://github.com/user-attachments/assets/b5ae1b84-1f2d-4590-a19a-6ca3585cc872" />
+![remediation](images/remediation.png)
 
 * Verified user connectivity by successfully logging on
-<img width="1020" height="789" alt="account unlocked and logged in" src="https://github.com/user-attachments/assets/20cb77e6-a0c0-479c-8797-c9ac76b37c47" />
+![validation](images/account%20unlocked%20and%20logged%20in.png)
 
 
 ## Lessons Learned
