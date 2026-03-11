@@ -26,8 +26,8 @@ Understanding what the promotion process configured behind the scenes helped rei
 After promotion, I validated DNS functionality using nslookup to confirm hostname resolution within the domain. I also verified that the forward lookup zone was created and functioning properly.  
 Once DNS resolution was confirmed, I successfully joined the Windows 10 client machine to the domain and logged in using a domain account. This verified both authentication services and proper DNS configuration.  
 Rather than assuming functionality, I intentionally tested domain join and login workflows to simulate real-world validation practices.
-<img width="977" height="508" alt="nslookup" src="https://github.com/user-attachments/assets/a4a542f1-eb01-49d0-b069-4d6b797b7de1" />
-<img width="1019" height="853" alt="tupac shakur" src="https://github.com/user-attachments/assets/aef7d072-e978-41dd-9c7b-6f69cfa01b83" />
+![nslookup](images/nslookup.png)  
+![tupac-user](images/tupac.shakur.png)  
 
 ## Mistakes and Lessons learned
 While building the lab, I initially deployed two Domain Controllers to simulate redundancy. However, I misconfigured their DNS settings by pointing each server’s preferred DNS address to the other Domain Controller.    
