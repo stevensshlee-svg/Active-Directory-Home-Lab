@@ -24,7 +24,7 @@ The issue occurred because the user account had reached its configured account e
 
 ## Remediation / Validation
 1. Unlock user account.
-2. Extend account expiration date.  
+2. Extend account expiration date as needed.  
 ![remediation](images/remediation.png)
 
 4. Successfully logging in as user Eminem.
