@@ -20,20 +20,21 @@ Because the issue involved file creation, the investigation focused on permissio
 ## Investigation
 1. Confirmed the user could access and browse the folder (TechSolutionsINC).
 2. Attempted to create a file as the user. Received "Access denied" error with "you need permission to perform this action" message.
-<img width="909" height="590" alt="sales cannot create file" src="https://github.com/user-attachments/assets/3eb00066-8c63-4637-995d-e118196ed809" />
+![salescannotcreatefile](images/sales%20cannot%20create%20file.png)
 
 3. Checked the scope to determine whether the issue was relative to a single user or multiple.
 4. Confirmed the issue also affected users in other departments as well.
-<img width="1004" height="826" alt="IT cannot create file as well" src="https://github.com/user-attachments/assets/f8de1480-11b1-48bc-b56d-9498aee422c2" />
+![itcannotcreatefile](images/IT%20cannot%20create%20file%20as%20well.png)
+
 5. Verified the user was in the correct security group (LA-Sales-Share-RW).
-<img width="970" height="510" alt="validating group membership" src="https://github.com/user-attachments/assets/0648c683-6519-41db-9812-8ee4e3c11718" />
-<img width="407" height="537" alt="validating group membership domain side" src="https://github.com/user-attachments/assets/5edc1075-e5aa-4f24-b961-6e94b3214520" />
+![validatinggroupmembership](images/validating%20group%20membership.png)
+![validatinggroupmembershipdomain](images/validating%20group%20membership%20domain%20side.png)  
 
-6. Reviewed NTFS permissions and confirmed the group had Modify access.
-<img width="356" height="480" alt="sales folder ntfs permissions" src="https://github.com/user-attachments/assets/5fd25fa9-ebd4-40ad-ad5f-592d6a8f7944" />
+6. Reviewed NTFS permissions and confirmed the group had Modify access.  
+![salesfolderntfs](images/sales%20folder%20ntfs%20permissions.png)
 
-7. Reviewed Share permissions and found Authenticated Users had "Read only" access.
-<img width="358" height="446" alt="techsolutions share permissions" src="https://github.com/user-attachments/assets/8994f24c-f15d-4194-855e-61fe57251fcd" />
+7. Reviewed Share permissions and found Authenticated Users had "Read only" access.  
+![techsolutionsharepermissions](images/techsolutions%20share%20permissions.png)
 
 8. Identified that hare level permissions were restricting write access despite NTFS allowing it.
 
@@ -43,12 +44,11 @@ Share permissions were configured as "Read only", which prevented write operatio
 The "Read only" share setting overrode the NTFS write permissions, preventing file creation.
 
 ## Remediation / Verification
-- Updated the Share permissions to grant Authenticated Users "Change" access
-<img width="357" height="445" alt="enable change permission on parent folder" src="https://github.com/user-attachments/assets/c432557a-e2eb-46ea-bd3c-c228caffd495" />
-
+- Updated the Share permissions to grant Authenticated Users "Change" access  
+![changepermission](images/enable%20change%20permission%20on%20parent%20folder.png)
 - User was then able to successfully create a file
-<img width="909" height="593" alt="document created" src="https://github.com/user-attachments/assets/83927b4a-a027-43a7-89c8-78e42ffcaef6" />
-<img width="782" height="591" alt="file created IT department" src="https://github.com/user-attachments/assets/959fe778-fa9c-4042-b17f-9082b19bc808" />
+![docucreated](images/document%20created.png)
+![filecreatedIT](images/file%20created%20IT%20department.png)
 
 - No additional permission issue was observed
 
